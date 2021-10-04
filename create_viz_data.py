@@ -8,7 +8,7 @@ from config import DATA_SAVE_PATH
 
 
 class VisualizationDataCreator():
-    def __init(self):
+    def __init__(self):
         pass
 
     def get_args(self):
@@ -62,6 +62,7 @@ class VisualizationDataCreator():
         output_path = os.path.join(DATA_SAVE_PATH, self.outputname)
         with open(output_path, "w") as fp:
             json.dump(viz_data, fp)
+            print(f"Created a file here - {output_path}")
 
 
 if __name__ == '__main__':
