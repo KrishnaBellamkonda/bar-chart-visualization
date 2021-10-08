@@ -25,6 +25,6 @@ def read_json_data(file_path=TEST_PATH, data_name="Data"):
 
     # Highlight Index 
     if obj["highlight_index"]: highlight_index = obj["highlight_index"]
-    else: None
+    else: highlight_index = None
 
     return [df, highlight_index]
